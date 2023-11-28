@@ -5,6 +5,10 @@ on:
     branches:
       - master
       # note that your "main" branch might be called main instead of master
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize]
+    #check when PR is open
 
 jobs:
   simple_deployment_pipeline:
